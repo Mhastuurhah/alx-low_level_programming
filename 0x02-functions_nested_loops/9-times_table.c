@@ -17,9 +17,9 @@ void times_table(void)
 			mult = num1 * num2;
 			if ((mult / 10) > 0)
 				_putchar((mult / 10) + '0');
-			else 
+			else
 				_putchar(' ');
-					
+
 			_putchar((mult % 10) + '0');
 			if (num2 == 9)
 				break;
