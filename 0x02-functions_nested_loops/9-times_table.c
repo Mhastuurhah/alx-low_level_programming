@@ -12,7 +12,10 @@ void times_table(void)
 
 	for (num1 = 0; num1 <= 9; num1++)
 	{
-		for (num2 = 0; num2 <= 9; num2++)
+		_putchar('0');
+		_putchar(',');
+		_putchar(' ');
+		for (num2 = 1; num2 <= 9; num2++)
 		{
 			mult = num1 * num2;
 			if ((mult / 10) > 0)
@@ -21,11 +24,12 @@ void times_table(void)
 				_putchar(' ');
 
 			_putchar((mult % 10) + '0');
-			if (num2 < 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+			if (num2 == 9)
+				break;
+			
+			_putchar(',');
+			_putchar(' ');
+	
 		}
 		_putchar('\n');
 	}
