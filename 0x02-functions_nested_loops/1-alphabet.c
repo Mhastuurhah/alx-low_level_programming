@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 
-/*
- * main - Write a function that prints the alphabet, in lowercase, followed by 
- * a new line
- * print_alphabet - prototype function
- * Return: Always return 0
+/**
+ * print_alphabet - Prints alphabet in lowercase
+ * Return: returns nothing
  */
 
 void print_alphabet(void)
