@@ -8,10 +8,12 @@
 
 int print_last_digit(int num)
 {
-	if (num < 0)
-		_putchar(((num % 10) * -1) + '0');
-	else
-		_putchar((num % 10) + '0');
+	int p_num;
 
-	return (num);
+	p_num = num % 10;
+	if (num < 0)
+		p_num = p_num * -1;
+
+	_putchar(p_num + '0');
+	return (p_num);
 }
